@@ -50,4 +50,14 @@ describe("Cash greedy algorithm tests", function() {
       expect(change).toBe(18);
     });
 
+    it("Should recieves negative value", ()=>{
+      let change = cash.change_owned(-1);
+      expect(change).toBe("invalid number");
+    });
+
+    it("Should recies a non-numeric valor", ()=>{
+      let change = cash.change_owned("foo");
+      expect(change).toBe("the value must to be a number");
+    });
+
   });
