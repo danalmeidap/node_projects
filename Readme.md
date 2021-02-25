@@ -1,0 +1,1 @@
+Application that uses greedy strategy to give you how many coins you will receive.
